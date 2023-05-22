@@ -22,3 +22,8 @@ q = st.text_input("Enter the query")
 if st.button("Submit"):
     result = query(retriever, q)
     st.write(f"# Answer : {result}")
+
+st.subheader(
+    "For source code please visit my git [link](https://github.com/mallapraveen/atomstate-interview-2)"
+)
+st.subheader("[My Profile](https://github.com/mallapraveen)")
