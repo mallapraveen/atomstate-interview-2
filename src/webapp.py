@@ -17,21 +17,8 @@ if uploaded_file is not None:
 
     retriever = load_pdf("./src/temp.pdf")
 
-q = st.text_input("Enter the context")
+q = st.text_input("Enter the query")
 
 if st.button("Submit"):
     result = query(retriever, q)
-    st.write(f"Answer : {result}")
-
-
-# context = st.text_input("Enter the context")
-# question = st.text_input("Enter the question")
-
-# if st.button("Submit"):
-#     result = qa(question, context)
-#     st.write(f"Answer : {result}")
-
-# st.subheader(
-#     "For source code please visit my git [link](https://github.com/mallapraveen/atomstate-interview)"
-# )
-# st.subheader("[My Profile](https://github.com/mallapraveen)")
+    st.write(f"# Answer : {result}")
